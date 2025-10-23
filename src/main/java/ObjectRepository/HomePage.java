@@ -25,10 +25,6 @@ public class HomePage  {
 	@FindBy(id = "shopping_cart_container")
 	private WebElement cartbtn;
 	
-	@FindBy(id = "continue")
-	private WebElement continuebtn;
-	
-
 	
 	public WebElement getProd1() {
 		return prod1;
@@ -42,11 +38,7 @@ public class HomePage  {
 		return cartbtn;
 	}
 	
-	public WebElement getContinuebtn() {
-		return continuebtn;
-	}
-	
-	
+	//business logic
 	public void AddtoCart(WebDriver driver) throws InterruptedException, IOException {
 		
 		getProd1().click();

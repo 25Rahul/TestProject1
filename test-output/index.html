@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Rahul Gupta\AppData\Local\Temp\testng-eclipse-1864292762\testng-customsuite.xml</span>
+                    <span>C:\Users\Rahul Gupta\AppData\Local\Temp\testng-eclipse--1023718733\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -136,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Rahul Gupta\AppData\Local\Temp\testng-eclipse-1864292762\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Rahul Gupta\AppData\Local\Temp\testng-eclipse--1023718733\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +145,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestScripts.Demo&quot;/&gt;
+      &lt;class name=&quot;TestScripts.Demo&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;VerifyHomePage&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestScripts.Demo --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -189,7 +193,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'VerifyHomePage')
 data.setCell(0, 2, 'TestScripts.Demo')
-data.setCell(0, 3, 9525);
+data.setCell(0, 3, 9826);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -208,9 +212,9 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">VerifyHomePage</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Login Page Verifcation Sucessfull</span>
-                <span class="reporter-method-output">Verifcation done</span>
-                <span class="reporter-method-output">Order Summary-Validation-Successfull</span>
+                <span class="reporter-method-output">Login Page Verified Sucessfully</span>
+                <span class="reporter-method-output">Cart Validation Sucessfull</span>
+                <span class="reporter-method-output">Order Summary Validation Sucessfull</span>
                 <span class="reporter-method-output">Thank you for your order!</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -236,27 +240,27 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">LaunchBrowser</span>
-                <span class="method-start">27 ms</span>
+                <span class="method-start">22 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">3134 ms</span>
+                <span class="method-start">2751 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyHomePage</span>
-                <span class="method-start">4939 ms</span>
+                <span class="method-start">4120 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logoutFromVtiger</span>
-                <span class="method-start">14464 ms</span>
+                <span class="method-start">13946 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">16849 ms</span>
+                <span class="method-start">14341 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">databaseDisconnection</span>
-                <span class="method-start">17760 ms</span>
+                <span class="method-start">15246 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

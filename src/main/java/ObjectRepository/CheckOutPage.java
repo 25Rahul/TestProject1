@@ -15,6 +15,7 @@ public class CheckOutPage  extends BaseClass{
 
 
 	public CheckOutPage (WebDriver driver){
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -55,10 +56,11 @@ public class CheckOutPage  extends BaseClass{
 		return contbtn;
 	}
 
-
+  //business logic
 	public void CheckOut(String fn,String ln,int zip) throws EncryptedDocumentException, IOException, InterruptedException {
     	
     	getCheckoutbtn().click();
+    	
 		Thread.sleep(1000);
 		getFnbx().sendKeys(fn);
 		Thread.sleep(1000);
@@ -67,6 +69,8 @@ public class CheckOutPage  extends BaseClass{
 		getZipbx().sendKeys(String.valueOf(zip));
 		Thread.sleep(1000);
 		getContbtn().click();
+		SummaryValidation sv = new SummaryValidation(driver);
+		sv.checkOrderSummary(driver);
 	}
 
 }
